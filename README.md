@@ -1,4 +1,4 @@
-# A Highly configurable and efficient implementation of Algorithm X
+# Configurable and Efficient Implementation of Algorithm X
 
 This is a modern C++ implementation of Donald Knuth's [Dancing
 Links](https://en.wikipedia.org/wiki/Dancing_Links) algorithm to solve
@@ -40,5 +40,6 @@ build the examples (and run tests) you need the
 [Bazel](https://www.bazel.build/) build system. From the root
 directory of the project you can build and run examples like this:
 
-      $ bazel run -c opt examples:sudoku
-      $ bazel run examples:nqueens 42     # 42 non-attacking queens
+      $ bazel run -c opt examples:sudoku # the basic basic benchmark
+      $ bazel run examples:nqueens 42    # 42 non-attacking queens
+      $ bazel run tests:tests            # not using google test ATM
